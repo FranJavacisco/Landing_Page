@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartX Pro - El Futuro en tus Manos</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav>
+            <div class="logo">SmartX Pro</div>
+            <div class="nav-links">
+                <a href="#caracteristicas">Características</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>SmartX Pro</h1>
+                <p>El futuro de la tecnología móvil está aquí</p>
+                <button class="cta-button">Comprar Ahora</button>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="./assets/img/celular.png" alt="SmartX Pro">
+            </div>
+        </div>
+    </header>
+
+    <!-- Características -->
+    <section id="caracteristicas" class="features">
+        <h2 data-aos="fade-up">Características Revolucionarias</h2>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up">
+                <i class="fas fa-camera"></i>
+                <h3>Cámara Profesional</h3>
+                <p>108MP con IA avanzada para fotos perfectas</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-microchip"></i>
+                <h3>Procesador Potente</h3>
+                <p>Rendimiento sin igual para todas tus tareas</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-battery-full"></i>
+                <h3>Batería Duradera</h3>
+                <p>5000mAh para días de uso continuo</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-brain"></i>
+                <h3>IA Integrada</h3>
+                <p>Asistente personal inteligente</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonials">
+        <h2 data-aos="fade-up">Lo que dicen nuestros usuarios</h2>
+        <div class="testimonials-container">
+            <div class="testimonial" data-aos="fade-right">
+                <img src="./assets/img/mujer 1.webp" alt="Usuario 1">
+                <p>"La mejor cámara que he probado en un smartphone"</p>
+                <h4>María García</h4>
+            </div>
+            <div class="testimonial" data-aos="fade-up">
+                <img src="./assets/img/mujer 2.webp" alt="Usuario 2">
+                <p>"La batería dura increíblemente, más de dos días"</p>
+                <h4>Juana Pérez</h4>
+            </div>
+            <div class="testimonial" data-aos="fade-left">
+                <img src="./assets/img/mujer 3.png" alt="Usuario 3">
+                <p>"El asistente de IA es realmente útil"</p>
+                <h4>Ana Martínez</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="contact">
+        <h2 data-aos="fade-up">¿Listo para dar el salto al futuro?</h2>
+        <div class="contact-container">
+            <form id="contact-form" data-aos="fade-up">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <select required>
+                    <option value="">Selecciona un modelo</option>
+                    <option value="128">SmartX Pro 128GB</option>
+                    <option value="256">SmartX Pro 256GB</option>
+                    <option value="512">SmartX Pro 512GB</option>
+                </select>
+                <textarea placeholder="Mensaje"></textarea>
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <button id="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-container" hidden>
+            <div class="chat-header">
+                <h3>Chat en vivo</h3>
+                <button id="chat-close">&times;</button>
+            </div>
+            <div class="chat-messages"></div>
+            <input type="text" placeholder="Escribe tu mensaje...">
+        </div>
+    </div>
+
+    <!-- CTA Flotante -->
+    <div class="floating-cta">
+        <button class="cta-button">¡Compra Ahora!</button>
+    </div>
+
+    <!-- Modal de Oferta -->
+    <div id="offer-modal" class="modal" hidden>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>¡Oferta Especial!</h2>
+            <p>Usa el código <strong>SMARTX25</strong> y obtén un 25% de descuento</p>
+            <button class="cta-button">Aprovechar Oferta</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
